@@ -394,3 +394,180 @@ nav ul .button:hover{
     font-size:1.2em;
     line-height:25px;
 }
+/*eighth-section*/
+#eighth-section{
+    display: flex;
+    justify-content: center;
+    padding:4em 5.3em;
+}
+#eighth-section .box{
+    display: flex;
+    justify-content:space-around;
+    height:612px;
+    background-color: rgb(23,24,28);
+}
+#eighth-section .box img{
+    width:533px;
+    height:100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+#eighth-section .box .text-box{
+    padding:6.5em 4em 6.5em 4em;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+#eighth-section .box .text-box h1{
+    font-size:3em;
+    font-weight: 600;
+}
+#eighth-section .box .text-box .paragraphs{
+    font-size:1.2em;
+    line-height:30px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    width:520px;
+    max-width:530px;
+}
+/*ninth section*/
+#ninth-section{
+    background-color: var(--third-color);
+    display: flex;
+    padding:4em 5.3em;
+    justify-content: flex-start
+}
+#ninth-section .box{
+    max-width: 1340px;
+    display: flex;
+    align-items: flex-start;
+    padding:3em 0;
+}
+#ninth-section .box img{
+    width: 567px;
+    height:611px;
+    object-fit: cover;
+    cursor: pointer;
+}
+#ninth-section .box .text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding:0em 5em;
+}
+#ninth-section .box .text-box h1{
+    font-size:2.8em;
+    width:500px;
+    font-weight: 600;
+    line-height: 50px;
+}
+#ninth-section .box .text-box p{
+    font-size:1.2em;
+}
+#ninth-section .box .text-box button{
+    width:50%;
+    padding:20px;
+    font-weight: 600;
+    color:var(--third-color);
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*tenth-section*/
+#tenth-section{
+    padding:4em 5.3em;
+    display: flex;
+}
+#tenth-section .box{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#tenth-section .box h1{
+    font-size:1.7em;
+    font-weight: 600;
+}
+#tenth-section .box p{
+    font-size: 1.2em;
+    line-height:25px;
+    width:1185px;
+    max-width: 1190px;
+}
+#tenth-section .box span{
+    color:var(--second-color);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+#tenth-section .box span:hover{
+    color:#b0bcf8;
+}
+#tenth-section .box .privacy-terms{
+    display: flex;
+    margin-top:30px;
+    gap:30px;
+    justify-content: center;
+    font-size:1.2em;
+}
+/*eleventh section*/
+#eleventh-section{
+    padding:7em 5.3em;
+    background-color: var(--main-color);
+    color:black;
+}
+#eleventh-section .box{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    max-width: 1340px;
+}
+#eleventh-section .box h1{
+    font-size:3.2em;
+    font-weight: 600;
+}
+#eleventh-section .box .card-box{
+    display: flex;
+    gap:20px;
+}
+#eleventh-section .box .card-box .card{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+#eleventh-section .box .card-box .card img{
+    width:587px;
+    height:309px;
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+}
+#eleventh-section .box .card-box .card img::after{
+    content:"";
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+#eleventh-section .box .card-box .card .about{
+    display: flex;
+    gap:20px;
+}
+#eleventh-section .box .card-box .card .about div{
+    background-color: #cbd3fa;
+    border-radius:5px;
+    padding:10px;
+    font-weight: 600;
+    font-size:0.9em;
+    color:var(--third-color);
+}
+#eleventh-section .box .card-box .card h1{
+    font-size:1.9em;
+    line-height:35px;
+    width:530px;
+    max-width:550px;
+}
+
