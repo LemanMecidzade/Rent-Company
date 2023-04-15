@@ -1,36 +1,44 @@
+:root{
+    --main-color:white;
+    --second-color:#7e93fb;
+    --third-color:#4561EC;
+    --text-hover:#b1beff;
+    --box-hover:#2a40ac;
+}
 *{
     box-sizing: border-box;
 }
 body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    color:var(--main-color);
-}
-:root{
-    --main-color:white;
-    --second-color:#7e93fb;
-    --third-color:#4561EC;
-    --hover-color:#2a40ac;
 }
 /*nav-bar*/
 nav{
+    padding:1.2em;
+    display: flex;
+    justify-content: center;
+}
+nav .box{
+    max-width: 1340px;
     width:100%;
     display: flex;
     justify-content: space-around;
     align-items:center;
-    margin: 10px auto;
-    height:60px;
     font-weight: 600;
 }
 nav .logo{
     width:100px;
-    height:34px;
 }
 nav ul li{
     display: inline-block;
-    margin-left:30px;
+    margin-left:35px;
     color:var(--second-color);
     font-size:0.9em;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color:var(--text-hover);
+    text-decoration: underline;
 }
 nav ul .button{
     color:var(--main-color);
@@ -39,44 +47,52 @@ nav ul .button{
     width:120px;
     text-align: center;
     border-radius: 5px;
-    cursor: pointer;
     transition: .3s ease-in-out;
 }
 nav ul .button:hover{
-    background-color:var(--hover-color);
+    background-color:var(--box-hover);
+    color:var(--main-color);
+    text-decoration: none;
 }
 /*first section*/
 #first-section{
     background-size: cover;
     background-repeat: no-repeat;
-    padding:13rem 8%;
+    padding:10em 6em;
+    display:flex;
+    justify-content: center;
 }
-#first-section .text-box{
+#first-section .box{
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    max-width:60%;
+    gap:35px;
+    width:100%;
+    max-width:1200px;
 }
-#first-section .text-box .logo{
+#first-section .box .logo{
     max-width:174px;
 }
-#first-section .text-box h1{
+#first-section .box h1{
     font-size:4.5em;
     font-weight: 600;
+    color:var(--main-color)
 }
-#first-section .text-box p{
-    line-height:1.5em;
+#first-section .box p{
     font-size:1.2em;
+    line-height:30px;
+    width:450px;
+    max-width:455px;
+    color:var(--main-color);
 }
-#first-section .text-box span{
+#first-section .box span{
     color:var(--second-color);
 }
-#first-section .text-box .buttons {
+#first-section .box .buttons {
     display: flex;
     gap:10px;
 }
-#first-section .text-box .buttons .explore,
-#first-section .text-box .buttons .discover
+#first-section .box .buttons .explore,
+#first-section .box .buttons .discover
 {
     padding:17px;
     width:170px;
@@ -86,88 +102,92 @@ nav ul .button:hover{
     cursor:pointer;
     transition: .3s ease-in-out;
 }
-#first-section .text-box .buttons .explore{
+#first-section .box .buttons .explore{
     color:var(--main-color);
     background-color: var(--third-color);
     border:none;
 }
-#first-section .text-box .buttons .explore:hover{
-    background-color: var(--hover-color);
+#first-section .box .buttons .explore:hover{
+    background-color: var(--box-hover)
 }
-#first-section .text-box .buttons .discover{
+#first-section .box .buttons .discover{
     border:1px solid var(--second-color);
     color:var(--second-color);
     background-color: transparent;  
 }
-#first-section .text-box .buttons .discover:hover{
-    border-color: var(--main-color);
-    color: var(--main-color);
+#first-section .box .buttons .discover:hover{
+    border-color:var(--main-color);
+    color:var(--main-color);
 }
 /*second section*/
 #second-section{
-    padding:7em;
+    padding:6em;
     display: flex;
     flex-direction: column;
-    gap:50px;
+    gap:60px;
     align-items: center;
 }
 #second-section .text-box{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items:center;
-    width:1200px;
-    max-width:1300px;
+    width:1150px;
+    max-width:1155px;
+    color:var(--main-color);
 }
 #second-section .text-box h1{
-    font-size:4em;
-    font-weight: 600;
+    font-size:4.5em;
+    font-weight:600;
 }
 #second-section .text-box p{
-    font-size:1em;
+    font-size:1.2em;
+    line-height:25px;
 }
 #second-section .card-box,
 #sixth-section .card-box{
     width:1150px;
     max-width: 1170px;
     display: flex;
-    justify-content:center;
     flex-wrap: wrap;
+    justify-content: center;
     gap:15px;
 }
 #second-section .card-box .card{
     background-color: var(--third-color);
-    padding:50px;
-    width:240px;
-    height:240px;
-    max-width:300px;
+    padding:45px;
+    width:275px;
+    height:275px;
+    max-width:276px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     border-radius: 5px;
     justify-content: space-between;
+    cursor: pointer;
     position: relative;
+    color:var(--main-color);
 }
 #second-section .card-box .card p{
     position: absolute;
     text-align: left;
-    font-size:1em;
-    width:202px;
+    font-size:1.1em;
+    line-height:20px;
+    width:224px;
     font-weight: 600;
     opacity: 0;
     transition: .4s ease-in-out;
-   
 }
 #second-section .card-box .card img{
-    width:70%;
     transition:.4s ease-in-out;
 }
 #second-section .card-box .card h1{
-    font-size:1.2em;
+    font-size:1.3em;
     font-weight:600;
     line-height:20px;
-    width:180px;
     transition: .4s ease-in-out;
+    width:210px;
+    line-height: 25px;
 }
 #second-section .card-box .card:hover.card img,
 #second-section .card-box .card:hover.card h1
@@ -180,59 +200,82 @@ nav ul .button:hover{
 /*third section*/
 #third-section{
     display: flex;
-    flex-direction: column;
-    gap:50px;
-    padding:5em 8%;
-    align-items: center;
+    justify-content: center;
+    padding:6em;
 }
-#third-section h1{
-    font-size:4em;
+#third-section .box{
+    display: flex;
+    flex-direction: column;
+    gap:50px;  
+}
+#third-section .box h1{
+    color:var(--main-color);
+    font-size:3.5em;
     font-weight: 600;
 }
-#third-section h1 span{
+#third-section .box h1 span{
     color:var(--second-color);
 }
-#third-section .img-box{
+#third-section .box .img-box{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap:15px;
     width:1150px;
     max-width: 1200px;
 }
-#third-section .img-box img{
+#third-section .box .img-box img{
     object-fit: cover;
     height:311px;
     cursor:pointer;
 }
+#third-section .box .img-box .group-1{
+    width:49%;
+}
+#third-section .box .img-box .group-2{
+    width:39%;
+}
+#third-section .box .img-box .group-3{
+    width:59%;
+}
+#third-section .box .img-box .group-4{
+    width:30%;
+}
 /*fourth-section*/
 #fourth-section{
-    padding:4em 0;
+    padding:6em;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 #fourth-section .box{
    display: flex;
    gap:60px;
+   width:1150px;
+   max-width: 1200px;
 }
 #fourth-section .box .text-box{
     display: flex;
     flex-direction: column;
     gap:30px;
 }
+#fourth-section .box .text-box .icons{
+    color:var(--second-color);
+}
 #fourth-section .box .text-box p{
-    font-size:2em;
+    font-size:1.9em;
     line-height: 45px;
+    color:var(--main-color);
+    width: 505px;
+    max-width:510px;
 }
 #fourth-section .box .text-box .bottom-text{
     display: flex;
     flex-direction: column;
     gap:10px;
+    font-weight: 600;
 }
 #fourth-section .box .text-box .bottom-text h1{
-    font-weight: 600;
     font-size:1.2em;
+    color:var(--main-color);
 }
 #fourth-section .box .text-box .bottom-text h2{
     color:var(--second-color);
@@ -250,19 +293,20 @@ nav ul .button:hover{
 }
 /*fifth-section*/
 #fifth-section{
-    padding:8% 0;
+    padding:6em;
     display: flex;
     justify-content: center;
 }
 #fifth-section .box{
-    max-width:1340px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+    width:1150px;
+    max-width: 1200px;
+    background-color: var(--third-color);
 }
 #fifth-section .box .img-box{
     width:601px;
-    height: 470px;
+    height:470px;
 }
 #fifth-section .box .img-box img{
     width:100%;
@@ -275,23 +319,24 @@ nav ul .button:hover{
     flex-direction: column;
     justify-content: center;
     gap:30px;
-    background-color: var(--third-color);
-    height:470px;
-    padding:3em;
+    padding:0 3em;
 }
 #fifth-section .box .text-box h1{
     font-size:2.5em;
     font-weight: 700;
+    color:var(--main-color)
 }
 #fifth-section .box .text-box .paragraphs{
     display: flex;
     flex-direction: column;
     gap:10px;
-    font-size:1.2em;
+    font-size:1.1em;
     line-height:30px;
+    width:450px;
+    color:var(--main-color);
 }
 #fifth-section .box .text-box button{
-    width:40%;
+    width:240px;
     border: none;
     background-color: var(--main-color);
     color:var(--third-color);
@@ -303,7 +348,7 @@ nav ul .button:hover{
     cursor: pointer;
 }
 #fifth-section .box .text-box button:hover{
-    background-color: var(--hover-color);
+    background-color: var(--box-hover);
     color:var(--main-color);
 }
 /*sixth-section*/
